@@ -7,8 +7,8 @@ public class Test : MonoBehaviour
     [SerializeField] private MeshRenderer meshRenderer;
 
     void Start() {
-        cardToTest.cardBehavior.GetClass().GetMethod("OnDraw").Invoke(null, null);
-        cardToTest.cardBehavior.GetClass().GetMethod("OnPlay").Invoke(null, null);
-        cardToTest.cardBehavior.GetClass().GetMethod("OnDiscard").Invoke(null, null);
+        cardToTest.OnDraw();
+        cardToTest.OnPlay();
+        cardToTest.OnDiscard();
     }
 }
