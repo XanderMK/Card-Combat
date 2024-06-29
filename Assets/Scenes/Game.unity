@@ -547,7 +547,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3171bf1916f2a2c8b5b19d9b90a471, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardToTest: {fileID: 11400000, guid: c0990393821b53922aa03ef1ce567808, type: 2}
+  deck:
+    deckBuild: []
+    cards: []
   meshRenderer: {fileID: 940802378}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

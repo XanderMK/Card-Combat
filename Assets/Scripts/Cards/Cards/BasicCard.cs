@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Basic Card", menuName = "Cards/Basic Card", order = 0)]
-public class BasicCard : MonoBehaviour
+[CreateAssetMenu(fileName = "Basic Card", menuName = "Cards/Basic Card")]
+public class BasicCard : CardData
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnDraw() 
     {
-        
+        Debug.Log("Drew " + GetType());
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnPlay()
     {
-        
+        Debug.Log("Played " + GetType());
+    }
+
+    public override void OnDiscard()
+    {
+        Debug.Log("Discarded " + GetType());
     }
 }
